@@ -5,16 +5,6 @@ permalink: /docs/AD2/
 
 # 요소기술  
 
-> http://smroadmap.smtech.go.kr/  
-> 논문 : 세타*: 동적 가중치를 가진 계층 구조식 경로계획법  
-   https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=DIKO0014017925&dbt=DIKO  
-> https://www.mdpi.com/2624-8921/3/3/27/pdf  
-> https://miracleyoo.tistory.com/21  
-> RRT 알고리즘 python https://velog.io/@delicate1290/ROS2-RRT-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98  
-> LOAM(Laser Odometry and Mapping) SLAM http://www.lumisol.co.kr/sub/reference/lidar.asp?mode=view&bid=4&s_type=&s_keyword=&s_cate=&idx=212&page=1  
-> 터틀봇 시뮬레이터 https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/  
-> kalman filter 구현 https://soohwan-justin.tistory.com/48?category=1019796
-> 
 
 
   - 데이터 셋 : BDD100K, KITTI
