@@ -1,6 +1,6 @@
 ---
 title: Mobile Robot
-permalink: /docs/AD1/
+permalink: /docs/AD2/
 ---
 
 # 요소기술  
