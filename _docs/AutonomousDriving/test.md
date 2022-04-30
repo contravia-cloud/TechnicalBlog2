@@ -1,6 +1,6 @@
 ---
 title: AutonomousDriving
-permalink: /docs/test/
+permalink: /docs/test-page/
 ---
 
 This template uses [bootstrap-sass](https://github.com/twbs/bootstrap-sass) along with [bootwatch themes](https://bootswatch.com/3).
