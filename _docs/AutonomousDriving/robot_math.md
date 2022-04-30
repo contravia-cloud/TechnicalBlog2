@@ -1,6 +1,6 @@
 ---
 title: robot_math2
-permalink: /docs/test-page/
+permalink: /docs/test-page2/
 ---
 
 # 제목1  
