@@ -55,6 +55,7 @@ permalink: /docs/AD1/
 
 ### 3.3 SLAM  
 > [Velodyne 공급사홈페이지-라이다를 활용한 SLAM](http://www.lumisol.co.kr/sub/reference/lidar.asp?mode=view&bid=4&s_type=&s_keyword=&s_cate=&idx=212&page=1)  
+> [석사학위논문 - 자율 주차를 위한 Around View Monitor(AVM) 기반 Visual SLAM](https://s-space.snu.ac.kr/bitstream/10371/174850/3/000000164251.pdf)  
 
 -----  
 <a name="action" />  
