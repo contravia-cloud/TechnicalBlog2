@@ -61,7 +61,7 @@ permalink: /docs/AD3/
 아래글은 다음 참조함  
 (https://www.slideshare.net/HyunggiChang?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)  
 
-- SLAM의 정의에 대한 두가지 견해  
+#### SLAM의 정의에 대한 두가지 견해  
   (https://www.slideshare.net/HyunggiChang?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)  
   - Stachniss : 연속된 실시간 센서데이터로 위치추정과 지도작성을 동시에 하면 SLAM 이다.
     - Classical robotics 관점  
@@ -70,7 +70,7 @@ permalink: /docs/AD3/
     - Modern robotics 관점 - large scale mapping
     - 최신 Visual SLAM 이 이 정의를 따름  
 
-- 기존의 localisation 방식의 한계  
+#### 기존의 localisation 방식의 한계  
   - Monte-Carlo localisation (particle filter)
     - configuration space(예 map) 정보를 알 때, particle filter를 이용해서 위치추정을 수행하는 방법  
     - Map의 정보가 정확하지 않을 때, 정확한 localisation에 실패하게 됨.  
@@ -82,13 +82,14 @@ permalink: /docs/AD3/
     - 계산해야하는 state가 많아질수록 covariance matrix가 quadratic 하게 증가하기 때문에 실시간 환경에서 모든 센서 데이터를 다 사용할 수 없음.
     - EKF의 경우 선형근사를 하기 때문에 매 state update 마다 에러가(drift error) 쌓일 수 밖에 없음  
 
-- SLAM 이 어려운 문제인 이유  
+#### SLAM 이 어려운 문제인 이유  
   - 기존의 단일 localisation / mapping 기법들로 해결 불가능  
   - 완벽한 state-estimation 이 나올 수 없음  
     - Monte-Carlo localisation 의 경우 sampling을 통한 particle selection이기 때문에 optimal value를 얻을 수 없음  
     - KF/EKF의 경우 선형 근사를 하기 때문에 근사 에러가 생길 수 밖에 없음
   - 시간이 지날수록 에러가 누적되며 추정된 global 위치 값에 큰 오차를 줌
-- SLAM 의 해결 방법  
+
+#### SLAM 의 해결 방법  
   - 연속된 데이터로부터 가장 정확한 localisation 값과 가장 정확한 mapping 값을 도출해낼 수 있는 최적화 문제로(least squares problem) 문제를 재정의함  
   - least-squares란  
     - over determined system의 해를 구하기 위한 방법(거의 모든 상황으 SLAM문제는 over determined system임)
@@ -97,7 +98,20 @@ permalink: /docs/AD3/
     - ![image](https://user-images.githubusercontent.com/57220434/166134877-6952785d-1024-477d-9b22-4aef815f38ca.png)  
     - 현재 로봇의 센서 값과 예상 센서 값을 최소화 할 수 있는 로봇의 위치 + 맵의 위치 값은 무엇인가
     - LiDAR SLAM : iterative closet point(ICP)
-    - Visual SLAM : Bundle Adjustment (BA)
+    - Visual SLAM : Bundle Adjustment (BA)  
+
+#### Graph based SLAM  
+  - 로봇의 움직임고 위치를 node와 edge로 구성  
+  - 로봇이 odometry 정보로 움직이면서 motion constraint를 구성  
+  - 추가 constaint(예 loop closure)등이 생성되면 최적화(least-squares) 수행 가능
+  - least-squares 문제를 구성하기 위해 graph based SLAM 이 사용됨 (즉 의존성의 관계를 형성하여 최적화 한다.)  
+  - ![image](https://user-images.githubusercontent.com/57220434/166136610-fbf6f7b6-b7f3-4ff0-a063-89f2676f084e.png)  
+  - global graph optimisatin이 없으면 odometry  
+  - global graph optimisatin이 있으면 SLAM (Scaramuzza의 SLAM 정의)  
+
+
+
+
 
 
 
