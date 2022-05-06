@@ -55,16 +55,27 @@ permalink: /docs/AD3/
   - tracking : 비용함수(reprojuction error, photometric error) 정의, Iterative Closest Point(ICP) 등으로 최적화  
   - 성능평가 : Absolute Trajectory Error(ATE)  
 
-- ORB-SLAM2 vs LSD-SLAM  
+#### Visual SLAM  
+- monocular SLAM  
+  - ORB-SLAM2 및 LSD-SLAM이 있다.  
+  - 카메라 자세추정 : 서로 다른 시점에서 촬영된 이미지로 3차원 위치 추정  
+  - 카메라 트래킹 : 특징점을 이용해서 카메라가 지도 내에 어디 있는지 추정  
+- ORB-SLAM2 vs LSD-SLAM 
   - ORB-SLAM2
     - sparse한 map을 만들지만 내 위치는 엄청 잘 잡는다.
     - CPU에서 돌아갈만큼 가볍다
     - gloval optimization + loop closure 가 들어가 있다.
-  - LSD-SLAM
+  - LSD-SLAM (Large-Scale Direct monocular SLAM)
     - 꽤 Dense한 map을 만들고 내 위치도 잘 잡힌다.
     - CPU에서 돌아가긴 하지만 알고리즘이 꽤 무겁다.
-    - 그래서 - gloval optimization + loop closure 가 없다.  
+    - 그래서 - global optimization + loop closure 가 없다.  
 
+- 기술 : 특징 추출, 특징 매칭, 카메라 자세추정(삼각측량법-> 초기지도작성), 카메라 트래킹
+- 특징 매칭 시 강건성 확보 알고리즘: 순환 일관성(cycle consistency), epipolar 제약, 호모그라피
+- 전역지도관리
+  - 국소지도확장 -> 오차 보정 -> 전역지도정합(전역지도 최적화)  
+    : 번들 조정(정합), 루프결합, 자세그래프 최적화 그리고 카메라 자세 놓쳤을 때 최적화카메라 위치 재조정  
+    
 - 비전 지식  
   - camera calibration  
   - feature detection / feature matching  
