@@ -4,34 +4,32 @@ permalink: /docs/AD3/
 ---
 
 ##### Table of Contents  
-[로컬라이제이션](#localisation)  
-[0.배경기술](#baseTech)  
-[1.센싱](#sensing)  
-[2.인지(perception)](#perception)  
-[3.판단](#decision)  
-[4.액션](#action)  
+[1. 로컬라이제이션](#localisation)  
+[2. 매핑](#mapping)  
+[3. SLAM](#slam)  
 
 
-<a name="intro" />  
-## 1 로컬라이제이션  
+
+<a name="localisation" />  
+## 1. 로컬라이제이션  
 - local 로컬라이제이션 : 상대적으로 빠르다. 리소스 적게필요  
 - global 로컬라이제이션 : external reference (인공위성, 랜드마크 등 활용)  
 
-### 1.1 GNSS 기반 로컬라이제이션  
+### 1.1. GNSS 기반 로컬라이제이션  
 
-### 1.2 wheel odometry 기반 로컬라이제이션  
+### 1.2. wheel odometry 기반 로컬라이제이션  
 - 외부참조 정보가 필요하지 않다.  
 - 상대적 로컬라이제이션  
 
-### 1.3 INS(inertia navigation system) 로컬라이제이션  
+### 1.3. INS(inertia navigation system) 로컬라이제이션  
 - 외부참조 정보가 필요없음
 - IMU 센서는 가속도계, 자이로스코프, 지자기센서로 이뤄진 경우가 많음  
 
-### 1.4 외부참조 정보를 이용한 로컬라이제이션  
+### 1.4. 외부참조 정보를 이용한 로컬라이제이션  
 - 패시브 디바이스 (표지판) 또는  
   액티브 디바이스 (와이파이,블루투스 비콘) 사용  
 
-### 1.5 LiDAR 기반 로컬라이제이션  
+### 1.5. LiDAR 기반 로컬라이제이션  
 - 빌딩, 벽, 나무와 같은 자연적인 랜드마크 사용
 - 지역로컬라이제이션 및 전역로컬라이제이션 모두에 사용  
 - 지역 스캔매칭  
@@ -39,8 +37,13 @@ permalink: /docs/AD3/
   - 차량의 이동과 회전을 누적하여 현재 자세 추정
 - 전역 스캔매칭(루프 클로징)
 
-## SLAM  
 
+<a name="mapping" />  
+## 2. mapping
+
+<a name="slam" />  
+## 3. SLAM  
+### 3.1. 서론
 - SLAM 구분(2020.11)  
   - 크게 LiDAR SLAM (대표적 알고리즘 : Lidar Odometry and Mapping(LOAM))  
   - RGB-D SLAM  
