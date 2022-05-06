@@ -18,8 +18,11 @@ permalink: /docs/AD1/
 [실습-터틀봇 홈페이지](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview)  
 [블로그-설명 및 실습](https://soohwan-justin.tistory.com/42?category=1019796)  
 
+- 자율주행 데이터 셋 : BDD100K, KITTI
+
 #### 1.2. 기술의 구성  
 - 배경 기술  
+  - 통계
 - 센싱  
     - 필터링
 - 인지(perception)  
@@ -27,7 +30,20 @@ permalink: /docs/AD1/
 - 판단  
     - 경로계획, 예측, 회피  
 - 액션  
-    - 경로보간, 모션제어, 힘제어  
+    - 경로보간, 경로추종(모션제어), 힘제어  
+
+
+#### 1.3. intelligent vehicle의 기본 기술, GNC
+- guidance(planning) : 경로 설계 (pursuit guidance/proportional navigation guidance)
+- navigation(항법,perception) : 위치파악 (sensing & perception, dead-reckoning )
+- control(action) : 경로 설계된 내용을 수행
+
+![image](https://user-images.githubusercontent.com/57220434/162558061-73549c49-d3a4-44f9-a20a-6b4317289a53.png)
+![image](https://user-images.githubusercontent.com/57220434/162558319-1a38506b-ed8e-4e4e-ad98-6eedd7e37a5c.png)
+![image](https://user-images.githubusercontent.com/57220434/162558555-863f4737-1ab7-4099-b7c1-23d03a6a13ec.png)
+![image](https://user-images.githubusercontent.com/57220434/162558566-681f309b-6cc8-40c8-80f8-ab0d4b191553.png)
+![image](https://user-images.githubusercontent.com/57220434/162558722-a87f8805-a6d5-485e-bfef-59d8cce0976e.png)
+
 
 <a name="baseTech" />  
 ## 2. 배경기술  
@@ -41,6 +57,9 @@ permalink: /docs/AD1/
 ## 4. 인지(perception)  
 ### 4.1. 로컬라이제이션  
 
+### 4.3 SLAM  
+> [Velodyne 공급사홈페이지-라이다를 활용한 SLAM](http://www.lumisol.co.kr/sub/reference/lidar.asp?mode=view&bid=4&s_type=&s_keyword=&s_cate=&idx=212&page=1)  
+> [석사학위논문 - 자율 주차를 위한 Around View Monitor(AVM) 기반 Visual SLAM](https://s-space.snu.ac.kr/bitstream/10371/174850/3/000000164251.pdf)  
 
 -----  
 <a name="decision" />  
@@ -52,11 +71,11 @@ permalink: /docs/AD1/
 > [블로그-ROS2 - RRT알고리즘 python](https://velog.io/@delicate1290/ROS2-RRT-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)  
 
 
-### 5.3 SLAM  
-> [Velodyne 공급사홈페이지-라이다를 활용한 SLAM](http://www.lumisol.co.kr/sub/reference/lidar.asp?mode=view&bid=4&s_type=&s_keyword=&s_cate=&idx=212&page=1)  
-> [석사학위논문 - 자율 주차를 위한 Around View Monitor(AVM) 기반 Visual SLAM](https://s-space.snu.ac.kr/bitstream/10371/174850/3/000000164251.pdf)  
 
 -----  
 <a name="action" />  
 ## 6. 액션
+### 6.2. 경로추종(모션제어)  
+- 
+
 
