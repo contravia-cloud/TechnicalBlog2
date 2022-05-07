@@ -38,8 +38,9 @@ permalink: /docs/AD1/
     - 경로계획, 예측, 회피  
 - 액션  
     - 경로보간, 경로추종(모션제어), 힘제어  
-<br/>
-<br/>
+<br/>  
+<br/>  
+
 #### 1.3. Traditional GNC 기술 (결정론적 접근, missile 계산 시...)  
 > KAIST 김지완 교수 intelligent vehicle 참조  
 
