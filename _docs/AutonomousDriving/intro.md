@@ -14,12 +14,12 @@ permalink: /docs/AD1/
 <a name="intro" />  
 ## 1. 들어가면서  
 #### 1.1. 참고 자료  
-[자율주행 기술 로드맵-중소벤처기업부](http://smroadmap.smtech.go.kr/)  
-[실습-터틀봇 홈페이지](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview)  
-[블로그-설명 및 실습](https://soohwan-justin.tistory.com/42?category=1019796)  
-[K-MOOC-자율주행자동차기술-국민대](http://www.kmooc.kr/courses/course-v1:KMUk+CK-KMUK_02+2021_1/about)
-[K-MOOC-자율주행 인공지능 시스템-국민대](http://www.kmooc.kr/courses/course-v1:NGV+NGV01+2021_A2/about)
-- 자율주행 데이터 셋 : BDD100K, KITTI
+    [자율주행 기술 로드맵-중소벤처기업부](http://smroadmap.smtech.go.kr/)  
+    [실습-터틀봇 홈페이지](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview)  
+    [블로그-설명 및 실습](https://soohwan-justin.tistory.com/42?category=1019796)  
+    [K-MOOC-자율주행자동차기술-국민대](http://www.kmooc.kr/courses/course-v1:KMUk+CK-KMUK_02+2021_1/about)
+    [K-MOOC-자율주행 인공지능 시스템-국민대](http://www.kmooc.kr/courses/course-v1:NGV+NGV01+2021_A2/about)
+    자율주행 데이터 셋 : BDD100K, KITTI
 
 #### 1.2. 기술의 구성  
 - 배경 기술  
