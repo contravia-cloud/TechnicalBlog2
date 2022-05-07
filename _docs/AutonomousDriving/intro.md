@@ -23,10 +23,8 @@ permalink: /docs/AD1/
 [K-MOOC-자율주행 인공지능 시스템-국민대](http://www.kmooc.kr/courses/course-v1:NGV+NGV01+2021_A2/about)  
 자율주행 데이터 셋 : BDD100K, KITTI  
 [강의- AI in ME 1 - KAIST](https://kooc.kaist.ac.kr/mechanical-engineering-ai)
-
-
-
-
+<br/>  
+<br/>  
 #### 1.2. 기술의 구성  
 - 배경 기술  
   - 통계
