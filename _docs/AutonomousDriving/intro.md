@@ -24,6 +24,7 @@ permalink: /docs/AD1/
 자율주행 데이터 셋 : BDD100K, KITTI  
 [강의- AI in ME 1 - KAIST](https://kooc.kaist.ac.kr/mechanical-engineering-ai)
 <br/>  
+
 #### 1.2. 기술의 구성  
 - 배경 기술  
   - 통계
@@ -36,6 +37,7 @@ permalink: /docs/AD1/
 - 액션  
     - 경로보간, 경로추종(모션제어), 힘제어  
 <br/>  
+
 #### 1.3. Traditional GNC 기술 (결정론적 접근, missile 계산 시...)  
 > KAIST 김지완 교수 intelligent vehicle 참조  
 
