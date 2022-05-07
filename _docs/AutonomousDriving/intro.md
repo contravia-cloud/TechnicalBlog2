@@ -22,6 +22,9 @@ permalink: /docs/AD1/
 [K-MOOC-자율주행자동차기술-국민대](http://www.kmooc.kr/courses/course-v1:KMUk+CK-KMUK_02+2021_1/about)  
 [K-MOOC-자율주행 인공지능 시스템-국민대](http://www.kmooc.kr/courses/course-v1:NGV+NGV01+2021_A2/about)  
 자율주행 데이터 셋 : BDD100K, KITTI  
+[강의- AI in ME 1 - KAIST](https://kooc.kaist.ac.kr/mechanical-engineering-ai)
+
+
 
 
 #### 1.2. 기술의 구성  
@@ -38,16 +41,56 @@ permalink: /docs/AD1/
 
 
 
-#### 1.3. intelligent vehicle의 기본 기술, GNC
-- guidance(planning) : 경로 설계 (pursuit guidance/proportional navigation guidance)
-- navigation(항법,perception) : 위치파악 (sensing & perception, dead-reckoning )
-- control(action) : 경로 설계된 내용을 수행
 
-![image](https://user-images.githubusercontent.com/57220434/162558061-73549c49-d3a4-44f9-a20a-6b4317289a53.png)
-![image](https://user-images.githubusercontent.com/57220434/162558319-1a38506b-ed8e-4e4e-ad98-6eedd7e37a5c.png)
-![image](https://user-images.githubusercontent.com/57220434/162558555-863f4737-1ab7-4099-b7c1-23d03a6a13ec.png)
-![image](https://user-images.githubusercontent.com/57220434/162558566-681f309b-6cc8-40c8-80f8-ab0d4b191553.png)
-![image](https://user-images.githubusercontent.com/57220434/162558722-a87f8805-a6d5-485e-bfef-59d8cce0976e.png)
+#### 1.3. Traditional GNC 기술 (결정론적 접근, missile 계산 시...)  
+> KAIST 김지완 교수 intelligent vehicle 참조  
+
+- Vehicle  
+  - Space vehicles, Aerial vehicles, Ground vehicles, Marine vehicles  
+- Unmanned Robotic Vehicles  
+  - Unmanned Aerial Vehicle (UAV), Unmanned Ground Vehicle (UGV), Unmanned Marine Vehicle (UMV)
+- Unmanned Vehicles vs Autonomous Vehicles
+  - 무인 이동체는 대부분 원격조정 등이 있어 완전 무인이 아니다. 이중 자율 판단을 추구해나아가는 것이 automous vehicles인 것이다.  
+  - 이를 위해 intellogent한 소프트웨어 기술이 필요하다.  
+
+- Intelligent vehicle의 기본 기술 GNC Guidance, Navigation and Control  
+  - Guidance (planning)  
+    To compute the desired path or trajectory from the vehicle's current location to a designate location.  
+    Classical guidance laws
+      - pursuit guidance(PG), constant bearing guidance, proportional navigation(PN), line-of-sight guidance(LOS)
+      - Optimal guidance, way-point guidance
+  - Navigation(sensing & perception)  
+    To determine the vehicles's motion variables including its position and attitude at a given time.  
+    Inertial/dead-reckonig navigarion,GPS navigation, radar navigation, sonar navigation, radio navigation  
+    Geophysical navigation : terrain-referecned, geomagnetic, gravimetric  
+    Vision-based navigation  
+  - Control  
+    To determine the necessary forces and moments to satisfy given control objectives (often tracking a guidance trajectory)  
+    Classical control (frequency domain techniques)  
+    Modern/optimal control (state-space techniques)  
+    Robust control, adaptive control, nonlinear control, etc.
+
+- Classical Guidance Examples  
+  - Pursuit Guidance  
+    - The interceptor remains pointed at the targer at all times  
+    - Effective for stationary or slow moving targets but may not be effective against moving targets  
+  - Proportional Navigation  
+    - The turn rate of the interceptor's heading is proportional to the turn rate of the LOSto the target.  
+    - Known to be effective for maneuvering(기동) targets  
+- Navigation Filter Algorithms  
+  - Complementary filtering  
+  - Fixed gain observer  
+  - Kalman filter  
+  - Particle filter  
+- Classical Control  
+  - PID  
+
+- 더 높은 수준의 GNC를 위한 AI 적용  
+  - 높은 수준의 판단을 위해  
+  - 많은 정보를 담고 있는 비전 정보를 딥러닝 방법으로 시도하고 있음  
+  - 복잡한 시스템을 강화학습을 통해 효과적으로 제어함 
+
+
 
 
 -----  
