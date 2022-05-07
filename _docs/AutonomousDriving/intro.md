@@ -12,10 +12,10 @@ permalink: /docs/AD1/
 [6.액션](#action)  
 
 <a name="intro" />  
+
 ## 1. 들어가면서  
-
+<br/>  
 #### 1.1. 참고 자료  
-
 [자율주행 기술 로드맵-중소벤처기업부](http://smroadmap.smtech.go.kr/)  
 [실습-터틀봇 홈페이지](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview)  
 [블로그-설명 및 실습](https://soohwan-justin.tistory.com/42?category=1019796)  
@@ -23,7 +23,6 @@ permalink: /docs/AD1/
 [K-MOOC-자율주행 인공지능 시스템-국민대](http://www.kmooc.kr/courses/course-v1:NGV+NGV01+2021_A2/about)  
 자율주행 데이터 셋 : BDD100K, KITTI  
 [강의- AI in ME 1 - KAIST](https://kooc.kaist.ac.kr/mechanical-engineering-ai)
-<br/>  
 <br/>  
 #### 1.2. 기술의 구성  
 - 배경 기술  
@@ -37,8 +36,6 @@ permalink: /docs/AD1/
 - 액션  
     - 경로보간, 경로추종(모션제어), 힘제어  
 <br/>  
-<br/>  
-
 #### 1.3. Traditional GNC 기술 (결정론적 접근, missile 계산 시...)  
 > KAIST 김지완 교수 intelligent vehicle 참조  
 
