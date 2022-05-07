@@ -38,10 +38,8 @@ permalink: /docs/AD1/
     - 경로계획, 예측, 회피  
 - 액션  
     - 경로보간, 경로추종(모션제어), 힘제어  
-
-
-
-
+<br/>
+<br/>
 #### 1.3. Traditional GNC 기술 (결정론적 접근, missile 계산 시...)  
 > KAIST 김지완 교수 intelligent vehicle 참조  
 
@@ -51,9 +49,9 @@ permalink: /docs/AD1/
   - Unmanned Aerial Vehicle (UAV), Unmanned Ground Vehicle (UGV), Unmanned Marine Vehicle (UMV)
 - Unmanned Vehicles vs Autonomous Vehicles
   - 무인 이동체는 대부분 원격조정 등이 있어 완전 무인이 아니다. 이중 자율 판단을 추구해나아가는 것이 automous vehicles인 것이다.  
-  - 이를 위해 intellogent한 소프트웨어 기술이 필요하다.  
+  - 이를 위해 intelligent한 소프트웨어 기술이 필요하다.  
 
-- Intelligent vehicle의 기본 기술 GNC Guidance, Navigation and Control  
+- Intelligent vehicle의 기본 기술 GNC (Guidance, Navigation and Control)  
   - Guidance (planning)  
     To compute the desired path or trajectory from the vehicle's current location to a designate location.  
     Classical guidance laws
@@ -101,7 +99,7 @@ permalink: /docs/AD1/
   - <img src="https://www.researchgate.net/profile/Takuya-Azumi/publication/309128426/figure/fig1/AS:416910068994049@1476410514667/ROS1-ROS2-architecture-for-DDS-approach-to-ROS-We-clarify-the-performance-of-the-data.png" width="60%" height="60%" title="타이틀" alt="image"/>  
   - image from : Exploring the Performance of ROS 2 <https://www.researchgate.net/publication/309128426_Exploring_the_performance_of_ROS2>
   - DDS(Data Distribution Service)는 OMG(http://www.omgwiki.org/dds/)에서 국제 표준으로 정한 실시간 데이터 분배 미들웨어 입니다.  
-  - GPG (GNU Privacy Guard, GnuPG 또는 GPG)
+- GPG (GNU Privacy Guard, GnuPG 또는 GPG)
 
 -----  
 <a name="sensing" />  
