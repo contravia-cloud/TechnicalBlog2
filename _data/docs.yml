@@ -7,11 +7,19 @@
   - AD4
   - AD5
 
+- title: Programming Language
+  docs:
+  - PL1
+  - PL2
+  - PL3
+  - PL4
+
 - title: basic knowledge
   docs:
   - BK1
   - BK2
   - BK3
+  - BK4
 
 - title: Getting Started
   docs:
