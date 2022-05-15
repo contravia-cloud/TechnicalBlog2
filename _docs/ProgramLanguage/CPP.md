@@ -7,7 +7,7 @@ permalink: /docs/PL1/
 
 
 
-```C++
+```cpp
 
 #include <iostream>
 
