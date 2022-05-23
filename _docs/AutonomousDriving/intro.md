@@ -17,13 +17,19 @@ permalink: /docs/AD1/
 <br/>  
 #### 1.1. 참고 자료  
 [자율주행 기술 로드맵-중소벤처기업부](http://smroadmap.smtech.go.kr/)  
-[실습-터틀봇 홈페이지](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview)  
-[블로그-설명 및 실습](https://soohwan-justin.tistory.com/42?category=1019796)  
 [K-MOOC-자율주행자동차기술-국민대](http://www.kmooc.kr/courses/course-v1:KMUk+CK-KMUK_02+2021_1/about)  
 [K-MOOC-자율주행 인공지능 시스템-국민대](http://www.kmooc.kr/courses/course-v1:NGV+NGV01+2021_A2/about)  
 자율주행 데이터 셋 : BDD100K, KITTI  
 [강의- AI in ME 1 - KAIST](https://kooc.kaist.ac.kr/mechanical-engineering-ai)  
 <br/>  
+[실습-터틀봇 홈페이지](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview)  
+[블로그-설명 및 실습](https://soohwan-justin.tistory.com/42?category=1019796)  
+<br/>  
+[블로그-slam](http://jinyongjeong.github.io/tag/SLAM/)  
+[블로그-RVO](https://ropiens.tistory.com/category/keep9oing/robotics)  
+<br/>  
+[tutorial - PCL](https://pcl.gitbook.io/tutorial/)  
+
 
 #### 1.2. 기술의 구성  
 - 배경 기술  
@@ -92,6 +98,35 @@ permalink: /docs/AD1/
 -----  
 <a name="baseTech" />  
 ## 2. 배경기술  
+### 2.1. bayesian
+> bayesian 방법 : 확률로 본다는 개념  
+
+bayesian filter는 베이즈 정리와 마코프가정 그리고 전확률 법칙으로 유도된다.  
+이 필터는 이전 상태와 제어값을 이용하여 현재 상태를 예측하고 베이즈 정리를 이용하여 센서 입력값을 현재 상태에 업데이트한다.  
+![image](https://user-images.githubusercontent.com/57220434/169835082-ae206769-ede7-442e-b615-506411d6cc58.png)  
+##### bayesian filter를 만든 이유?  
+우리는 베이즈 정리를 통해 추론을 할 수 있다.  
+이 원리는 모형(likelihood)을 알고있는 시스템에서 증거(prior)가 주어진다면 상태(posterior)를 추론할 수 있다는 것이다.  
+더 쉬운 말로 시스템의 전달함수를 알고있고 결과 값 y가 주어진다면 입력 x를 알 수 있다는 것이다.  
+결국 y=ax에서 a와 y를 알면 x를 알 수 있다는 말이다.  단지 x,y,a가 확률분포라는 이야기일 뿐...  
+이것을 통해 센서 측정 값으로 현재 상태를 추론하게 된다.
+또한 베이즈 필터는 결과 값을 다시 입력으로 넣어주면서 재귀적으로 반복 시켜 과거 값을 계속 반영하도록 만들었는데  
+이렇게 하면 이동평균처럼 노이즈를 제거하는 효과를 얻을 수 있다.  
+여기서는 평균이 아니라 확률분포를 곱한 것이고, 이것은 이상 값이 들어오면 바로 그값을 취하지 않게되어 노이즈 필터가 된다.  
+과거 데이터 기반으로 노이즈를 제거하는 방법의 예로 시계열 분석이 있다.  
+마코프가정은 바로 직전 값만을 고려하는 방법이다.  
+정리하면 베이즈 필터는 센서 측정 값으로 현재 상태를 추정하고 과거 데이터를 기반으로 노이즈를 제거하는 역할을 수행한다.  
+##### bayesian filter의 문제점  
+확률분포를 함수로 나타내기 어려워 적분하기가 힘들다.  
+그래서 확률분포를 가우시안 분포로 가정하거나 랜덤샘플링 방법으로 계산 가능하도록 한다.  
+이 두가지를 각각 가우시안 필터, 파티클 필터 라고 부른다.  
+
+
+
+
+
+
+
 
 - DDS (Data Distribution Service)  
   - <img src="https://www.researchgate.net/profile/Takuya-Azumi/publication/309128426/figure/fig1/AS:416910068994049@1476410514667/ROS1-ROS2-architecture-for-DDS-approach-to-ROS-We-clarify-the-performance-of-the-data.png" width="60%" height="60%" title="타이틀" alt="image"/>  
