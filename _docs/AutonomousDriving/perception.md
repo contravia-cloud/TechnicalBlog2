@@ -4,32 +4,39 @@ permalink: /docs/AD3/
 ---
 
 ##### Table of Contents  
-[1. 로컬라이제이션](#localisation)  
+[1. Localization](#localisation)  
 [2. 매핑](#mapping)  
 [3. SLAM](#slam)  
 
 
 
 <a name="localisation" />  
-## 1. 로컬라이제이션  
+## 1. Localization  
 - local 로컬라이제이션 : 상대적으로 빠르다. 리소스 적게필요  
 - global 로컬라이제이션 : external reference (인공위성, 랜드마크 등 활용)  
 
-### 1.1. GNSS 기반 로컬라이제이션  
 
-### 1.2. wheel odometry 기반 로컬라이제이션  
+### 1.1. intro  
+> 순서는 다음과 같다. 센싱-> 전처리 -> feature detection -> matching -> localization  
+
+
+
+
+### 1.2. GNSS 기반 로컬라이제이션  
+
+### 1.3. wheel odometry 기반 로컬라이제이션  
 - 외부참조 정보가 필요하지 않다.  
 - 상대적 로컬라이제이션  
 
-### 1.3. INS(inertia navigation system) 로컬라이제이션  
+### 1.4. INS(inertia navigation system) 로컬라이제이션  
 - 외부참조 정보가 필요없음
 - IMU 센서는 가속도계, 자이로스코프, 지자기센서로 이뤄진 경우가 많음  
 
-### 1.4. 외부참조 정보를 이용한 로컬라이제이션  
+### 1.5. 외부참조 정보를 이용한 로컬라이제이션  
 - 패시브 디바이스 (표지판) 또는  
   액티브 디바이스 (와이파이,블루투스 비콘) 사용  
 
-### 1.5. LiDAR 기반 로컬라이제이션  
+### 1.6. LiDAR 기반 로컬라이제이션  
 - 빌딩, 벽, 나무와 같은 자연적인 랜드마크 사용
 - 라이다 기반 로컬라이제이션에는 보통 스캔 매칭을 이용한다.  
   - 두 스캔 결과가 최적으로 중첩될 수 있는 기하학적 정렬을 탐색하는 기법  
