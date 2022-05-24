@@ -20,9 +20,10 @@ permalink: /docs/BK1/
 ##### P-Median  
 > https://github.com/ralaruri/p_median_python  
 > https://totoma3.tistory.com/201  
-<br>
-![image](https://user-images.githubusercontent.com/57220434/170046076-117c4017-6985-4bdf-84ca-6c18c6eeede0.png)
-<br>
+
+<br>  
+![image](https://user-images.githubusercontent.com/57220434/170046076-117c4017-6985-4bdf-84ca-6c18c6eeede0.png)  
+<br>  
 
 ###### P-Median 구현  
 - pulp 팩키지 활용 : python 선형계획법(linear programming, LP)  
