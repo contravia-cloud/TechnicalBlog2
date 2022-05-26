@@ -55,11 +55,11 @@ permalink: /docs/BK1/
 
 #### 최적화 변수  
 여기서는 목적함수가 없다.  
-경로 a, b, c, d, e 의 실행 순서가 아래 제약조건을 만족하면 된다.
+경로 a, b, c, d, e 의 실행 순서가 아래 제약조건을 만족하면 된다.  
 
 #### 제약조건  
-인접한 경로는 순서가 1보다 커야한다.(한칸보다 더 떨어져야함)
-같은 경로를 2회 지나갈 수 없다.
+인접한 경로는 순서가 1보다 커야한다.(한칸보다 더 떨어져야함)  
+같은 경로를 2회 지나갈 수 없다.  
 
 ```python
 from ortools.sat.python import cp_model
@@ -124,8 +124,6 @@ def SearchForAllSolutionsSampleSat():
     model.Add(c!=d)
     model.Add(c!=e)
     model.Add(d!=e)
-
-
 
     # Create a solver and solve.
     solver = cp_model.CpSolver()
