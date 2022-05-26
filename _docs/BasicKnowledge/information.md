@@ -6,7 +6,7 @@ permalink: /docs/BK1/
 ##### Table of Contents  
 [1. 로봇 분야 기술 면접](#first)  
 [2. 데이터 분석 사례(전통시장 DT 활용 방안)](#second)  
-[3. Path following](#pathFollowing)  
+[3. Coverage Path Plan](#coveragePathPlan)  
 
 <br>  
 <a name="first" /> 
@@ -44,5 +44,97 @@ permalink: /docs/BK1/
 ##### 2.2. 문제 해결 방법  
 조건기반 -> 룰기반 -> 모형기반(LP, 정수계획법 등등) -> 메타 휴리스틱(유전알고리즘 등)  
 <br>
+
+-------------  
+<br>  
+
+<a name="coveragePathPlan" />  
+### 3. Coverage Path Plan  
+
+![image](https://user-images.githubusercontent.com/57220434/170495451-874ea54d-febb-4c34-a418-76e977497d0f.png)
+
+```python
+from ortools.sat.python import cp_model
+
+
+class VarArraySolutionPrinter(cp_model.CpSolverSolutionCallback):
+    """Print intermediate solutions."""
+
+    def __init__(self, variables):
+        cp_model.CpSolverSolutionCallback.__init__(self)
+        self.__variables = variables
+        self.__solution_count = 0
+
+    def on_solution_callback(self):
+        self.__solution_count += 1
+        for v in self.__variables:
+            print('%s=%i' % (v, self.Value(v)), end=' ')
+        print()
+
+    def solution_count(self):
+        return self.__solution_count
+
+
+def SearchForAllSolutionsSampleSat():
+    """Showcases calling the solver to search for all solutions."""
+    # Creates the model.
+    model = cp_model.CpModel()
+
+    # Creates the variables.
+    num_vals = 6
+    a = model.NewIntVar(1, 1, 'a')
+    b = model.NewIntVar(1, num_vals - 1, 'b')
+    c = model.NewIntVar(1, num_vals - 1, 'c')
+    d = model.NewIntVar(1, num_vals - 1, 'd')
+    e = model.NewIntVar(1, num_vals - 1, 'e')
+    
+    k = model.NewBoolVar('a>b')
+    l = model.NewBoolVar('b>c')
+    m = model.NewBoolVar('c>d')
+    n = model.NewBoolVar('d>e')
+
+    # Create the constraints.
+    model.Add((b-a)>1).OnlyEnforceIf(k)
+    model.Add((a-b)>1).OnlyEnforceIf(k.Not())
+    
+    model.Add((c-b)>1).OnlyEnforceIf(l)
+    model.Add((b-c)>1).OnlyEnforceIf(l.Not())
+    
+    model.Add((d-c)>1).OnlyEnforceIf(m)
+    model.Add((c-d)>1).OnlyEnforceIf(m.Not())
+    
+    model.Add((e-d)>1).OnlyEnforceIf(n)
+    model.Add((d-e)>1).OnlyEnforceIf(n.Not())
+    
+    model.Add(a!=b)
+    model.Add(a!=c)
+    model.Add(a!=d)
+    model.Add(a!=e)
+    model.Add(b!=c)
+    model.Add(b!=d)
+    model.Add(b!=e)
+    model.Add(c!=d)
+    model.Add(c!=e)
+    model.Add(d!=e)
+
+
+
+    # Create a solver and solve.
+    solver = cp_model.CpSolver()
+    solution_printer = VarArraySolutionPrinter([a, b, c, d, e])
+    # Enumerate all solutions.
+    solver.parameters.enumerate_all_solutions = True
+    # Solve.
+    status = solver.Solve(model, solution_printer)
+
+    print('Status = %s' % solver.StatusName(status))
+    print('Number of solutions found: %i' % solution_printer.solution_count())
+
+
+SearchForAllSolutionsSampleSat()
+```
+
+
+
 
 
