@@ -51,7 +51,15 @@ permalink: /docs/BK1/
 <a name="coveragePathPlan" />  
 ### 3. Coverage Path Plan  
 
-![image](https://user-images.githubusercontent.com/57220434/170495451-874ea54d-febb-4c34-a418-76e977497d0f.png)
+![image](https://user-images.githubusercontent.com/57220434/170496168-b427a47a-6210-46f6-891b-c5d4282cd5ba.png)  
+
+#### 최적화 변수  
+여기서는 목적함수가 없다.  
+경로 a, b, c, d, e 의 실행 순서가 아래 제약조건을 만족하면 된다.
+
+#### 제약조건  
+인접한 경로는 순서가 1보다 커야한다.(한칸보다 더 떨어져야함)
+같은 경로를 2회 지나갈 수 없다.
 
 ```python
 from ortools.sat.python import cp_model
@@ -132,6 +140,13 @@ def SearchForAllSolutionsSampleSat():
 
 
 SearchForAllSolutionsSampleSat()
+```  
+<br>  
+```
+a=1 b=3 c=5 d=2 e=4 
+a=1 b=4 c=2 d=5 e=3 
+Status = OPTIMAL
+Number of solutions found: 2
 ```
 
 
