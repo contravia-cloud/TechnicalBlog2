@@ -7,6 +7,7 @@ permalink: /docs/BK1/
 [1. 로봇 분야 기술 면접](#first)  
 [2. 데이터 분석 사례(전통시장 DT 활용 방안)](#second)  
 [3. Coverage Path Plan](#coveragePathPlan)  
+[4. Bayes Filter](#bayesFilter)  
 
 <br>  
 <a name="first" /> 
@@ -147,7 +148,11 @@ Status = OPTIMAL
 Number of solutions found: 2
 ```
 
+<br>  
 
+<a name="bayesFilter" />  
+### 3. Bayes Filter  
 
+![image](https://user-images.githubusercontent.com/57220434/171184677-4ff56007-1cc4-4682-9622-550ed7d83be5.png)
 
 
