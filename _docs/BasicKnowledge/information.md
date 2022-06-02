@@ -153,6 +153,5 @@ Number of solutions found: 2
 <a name="bayesFilter" />  
 ### 3. Bayes Filter  
 
-![image](https://user-images.githubusercontent.com/57220434/171184677-4ff56007-1cc4-4682-9622-550ed7d83be5.png)
-
+![image](https://user-images.githubusercontent.com/57220434/171639735-2558329c-d6f3-443e-98d0-5456454ad14f.png)
 
