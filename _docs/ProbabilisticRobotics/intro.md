@@ -45,7 +45,8 @@ permalink: /docs/PR1/
   - 속도 모션모델 : 로봇을 회전속도 및 선속도를 통해 제어한다고 가정  
     $u_{t} \quad = \quad \begin{pmatrix} v_{t} \\\\ w_{t} \end{pmatrix}$
   - 오도메트리 모션모델 : 상대적인 위치 이동으로 제어값을 추정함  
-    $u_{t} \quad = \quad \begin{pmatrix} \overline{a}_{t} \\\\ w_{t} \end{pmatrix}$
+    $u_{t} \quad = \quad \begin{pmatrix} \bar{x}\_{t-1} \\\\ \bar{x}\_{t} \end{pmatrix}$  
+    
 
 
 
