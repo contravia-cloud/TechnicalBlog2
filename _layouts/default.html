@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <body>
-
+    {% include Mathjax.html %}
     {% include topnav.html %}
 
     <div class="page-content">
@@ -12,10 +12,9 @@
             {{ content }}
         </div>
     </div>
-
     {% include footer.html %}
     {% include js_files.html %}
-    {% include Mathjax.html %}
+    
 </body>
 
 </html>
