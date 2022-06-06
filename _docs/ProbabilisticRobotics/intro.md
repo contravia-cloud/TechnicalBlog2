@@ -43,7 +43,7 @@ permalink: /docs/PR1/
 #### 5.2 기본 정보  
 - 두 가지 확률론적 모션 모델  
   - 속도 모션모델 : 로봇을 회전속도 및 선속도를 통해 제어한다고 가정  
-    $u_{t} \,, = \begin{pmatrix}v_{t}\\w_{t}\\ \end{pmatrix}$
+    $u_{t} \quad = \quad \begin{pmatrix} v_{t} \\\\ w_{t} \end{pmatrix}$
   - 오도메트리 모션모델 : 상대적인 위치 이동으로 제어값을 추정함
 
 
