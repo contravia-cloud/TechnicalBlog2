@@ -8,8 +8,8 @@ lang: en-US
 
 baseurl: "/TechnicalBlog2" # the subpath of your site, e.g. /blog/
 url: 'https://contravia-cloud.github.io/TechnicalBlog2/' # the base hostname & protocol for your site
-# git_address: https://github.com/aksakalli/jekyll-doc-theme
-# git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+git_address: https://github.com/contravia-cloud/TechnicalBlog2
+git_edit_address: https://github.com/contravia-cloud/TechnicalBlog2
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
