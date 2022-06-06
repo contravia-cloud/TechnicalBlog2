@@ -17,6 +17,9 @@ bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen read
 
 # Build settings
 markdown: kramdown
+# kramdown : markdown의 개조판.
+kramdown:
+  math_engine:            mathjax
 highlighter: rouge
 # Plugins (previously gems:)
 plugins:
