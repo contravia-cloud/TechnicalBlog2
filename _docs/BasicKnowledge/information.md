@@ -167,7 +167,8 @@ Number of solutions found: 2
 ![image](https://user-images.githubusercontent.com/57220434/173587449-a2a075f5-472d-4714-82fd-e1c611fcbd5b.png)  
 
 
-> [Set covering models in optimizing the emergency unit location
+#### covering models 관련 논문
+[Set covering models in optimizing the emergency unit location
 of health facility in Palembang](https://iopscience.iop.org/article/10.1088/1742-6596/1282/1/012008/pdf)  
 - Location Set Covering Problem (LSCP)
 - Maximal Covering Location Problem (MCLP)
