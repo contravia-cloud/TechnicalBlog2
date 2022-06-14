@@ -8,6 +8,9 @@ permalink: /docs/BK1/
 [2. 데이터 분석 사례(전통시장 DT 활용 방안)](#second)  
 [3. Coverage Path Plan](#coveragePathPlan)  
 [4. Bayes Filter](#bayesFilter)  
+[5. Covering Models](#CoveringModels)  
+
+
 
 <br>  
 <a name="first" /> 
@@ -151,7 +154,23 @@ Number of solutions found: 2
 <br>  
 
 <a name="bayesFilter" />  
-### 3. Bayes Filter  
+### 4. Bayes Filter  
 
 ![image](https://user-images.githubusercontent.com/57220434/171639735-2558329c-d6f3-443e-98d0-5456454ad14f.png)
+
+<a name="CoveringModels" />  
+<br>
+
+### 5. Covering Models  
+> [일회용품 쓰레기 감소를 위한, 다회용기 렌탈 사업 비즈니스 모델 개발](https://bigdata.seoul.go.kr/noti/selectNoti.do?r_id=P260&bbs_seq=549&ac_type=A2&sch_type=&sch_text=&currentPage=1)  
+
+![image](https://user-images.githubusercontent.com/57220434/173587449-a2a075f5-472d-4714-82fd-e1c611fcbd5b.png)  
+
+- Location Set Covering Problem (LSCP)
+- Maximal Covering Location Problem (MCLP)
+
+
+
+
+
 
