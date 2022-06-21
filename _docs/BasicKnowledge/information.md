@@ -9,6 +9,7 @@ permalink: /docs/BK1/
 [3. Coverage Path Plan](#coveragePathPlan)  
 [4. Bayes Filter](#bayesFilter)  
 [5. Covering Models](#CoveringModels)  
+[6. 서울시 1인가구 생활실태 분석 결과](#ex6)  
 
 
 
@@ -174,8 +175,21 @@ of health facility in Palembang](https://iopscience.iop.org/article/10.1088/1742
 - Location Set Covering Problem (LSCP)
 - Maximal Covering Location Problem (MCLP)
 
+<br>
+<a name="ex6" /> 
+<br>
+### 6. 서울시 1인가구 생활실태 분석 결과  
+> [서울시 1인가구 생활실태 분석 결과](https://data.kostat.go.kr/sbchome/bbs/boardDetail.do)  
+> 통계청 데이터와 SK텔레콤 데이터 결합
+
+- 분석 방법에 대한 시사점  
+  -  특별한 분석 기법은 없지만 X를 다양하게 조합하여 Y의 변화를 확인하면서 인사이트를 얻고있다.  
+  -  통계청 데이터와 SK텔레콤 데이터 결합 방법  
+    -  데이터3법이 개정되면서 가명정보 결합이 가능해짐에 따라 SK텔레콤과 통계청 가명결합 결합키(성, 이름, 생년월일) 생성
+
+![image](https://user-images.githubusercontent.com/57220434/174806123-73195a52-f847-4c4e-8d31-ccc1d738d36d.png)  
 
 
-
+  
 
 
