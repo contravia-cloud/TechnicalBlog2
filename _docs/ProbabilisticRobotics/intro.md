@@ -2,7 +2,11 @@
 title: 개요
 permalink: /docs/PR1/
 ---
-
+<br>  
+![image](https://user-images.githubusercontent.com/57220434/175820495-e7ac12da-e142-4d5c-906b-1bb2500b939b.png)  
+<br>  
+![image](https://user-images.githubusercontent.com/57220434/175820503-38ea506f-7073-41e8-921e-8721d71eee7c.png)  
+<br>  
 
 ### 2. 재귀 스테이트 추정  
 - 2장에서는 재귀 스테이트 추정을 소개한다.  
