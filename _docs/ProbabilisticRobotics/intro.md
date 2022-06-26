@@ -4,7 +4,7 @@ permalink: /docs/PR1/
 ---
 
 <br>  
-![image](https://user-images.githubusercontent.com/57220434/175822050-62f1c640-8c2c-4c2c-86e4-525c083b0bed.png)
+![image](https://user-images.githubusercontent.com/57220434/175822677-3167866e-6eea-49e6-ae0c-685614b3f364.png)  
 <br>  
 ![image](https://user-images.githubusercontent.com/57220434/175820700-bea66f5b-10cd-4df5-b497-71ef8c523ef4.png)
 <br>  
