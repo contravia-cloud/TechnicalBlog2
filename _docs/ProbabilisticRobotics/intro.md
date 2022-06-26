@@ -3,7 +3,7 @@ title: 개요
 permalink: /docs/PR1/
 ---
 <br>  
-![image](https://user-images.githubusercontent.com/57220434/175820495-e7ac12da-e142-4d5c-906b-1bb2500b939b.png)  
+![image](https://user-images.githubusercontent.com/57220434/175820578-85372b57-55f1-428a-b0a6-b935647dbfa6.png)  
 <br>  
 ![image](https://user-images.githubusercontent.com/57220434/175820503-38ea506f-7073-41e8-921e-8721d71eee7c.png)  
 <br>  
