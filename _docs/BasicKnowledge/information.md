@@ -193,5 +193,8 @@ of health facility in Palembang](https://iopscience.iop.org/article/10.1088/1742
 
 
   
+### 7. Moment  
+![image](https://user-images.githubusercontent.com/57220434/177045309-d485d07a-78f7-4b61-8240-169ed82d7d97.png)  
+
 
 
