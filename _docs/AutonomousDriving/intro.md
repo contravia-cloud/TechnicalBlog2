@@ -146,6 +146,19 @@ bayesian filter는 베이즈 정리와 마코프가정 그리고 전확률 법�
 ### 4.3 SLAM  
 > [Velodyne 공급사홈페이지-라이다를 활용한 SLAM](http://www.lumisol.co.kr/sub/reference/lidar.asp?mode=view&bid=4&s_type=&s_keyword=&s_cate=&idx=212&page=1)  
 > [석사학위논문 - 자율 주차를 위한 Around View Monitor(AVM) 기반 Visual SLAM](https://s-space.snu.ac.kr/bitstream/10371/174850/3/000000164251.pdf)  
+> [SLAM KR youtube](https://www.youtube.com/c/SLAMKR)  
+
+
+### GraphSLAM  
+#### 최적화
+> [비선형 최적화 Non-linear optimisation - Gradient descent, Newton-Raphson, Gauss-Newton, Levenberg-Marquardt](http://www.cv-learn.com/20210314-nonlinear-optimisation/)  
+> [Graph-based SLAM 입문 + Solver 프레임워크 소개](http://www.cv-learn.com/20210607-solvers/)  
+
+> [SLAM- g2o - Alternative Parameterizations 논문 섹션 리뷰](https://alida.tistory.com/50?category=1061563)  
+> [OpenSLAM - g2o: A General Framework for Graph Optimization](https://openslam-org.github.io/g2o)  
+
+
+## 맵핑?
 
 -----  
 <a name="decision" />  
@@ -156,7 +169,8 @@ bayesian filter는 베이즈 정리와 마코프가정 그리고 전확률 법�
 > [블로그-Application of hybrid A star](https://miracleyoo.tistory.com/21)  
 > [블로그-ROS2 - RRT알고리즘 python](https://velog.io/@delicate1290/ROS2-RRT-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)  
 
-
+> [논문-A Local Planner for Accurate Positioning for a Multiple Steer-and-Drive Unit Vehicle Using Non-Linear Optimization](https://www.mdpi.com/1424-8220/22/7/2588/htm)  
+> 
 
 -----  
 <a name="action" />  
