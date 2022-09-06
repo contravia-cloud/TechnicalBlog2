@@ -212,6 +212,7 @@ of health facility in Palembang](https://iopscience.iop.org/article/10.1088/1742
   즉 P의 최대가능도추정량(Maximum Likelihood Estimation) = 0.4 
 <br>
 - 키를 5번 측정했을 때 178,179,180,181,182cm이 나올 가능성이 최대가 되는 키는 얼마일까?  
+
 ![image](https://user-images.githubusercontent.com/57220434/188644019-db8b48fb-a3b3-4f2f-9986-7b360ed8f5ef.png)
 
 
