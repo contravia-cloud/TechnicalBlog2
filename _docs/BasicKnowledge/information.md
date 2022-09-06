@@ -197,7 +197,7 @@ of health facility in Palembang](https://iopscience.iop.org/article/10.1088/1742
 ![image](https://user-images.githubusercontent.com/57220434/177045309-d485d07a-78f7-4b61-8240-169ed82d7d97.png)  
 
 ### 8. 가능도  
-[확률 vs 가능도](https://rpubs.com/Statdoc/204928)  
+>[확률 vs 가능도](https://rpubs.com/Statdoc/204928)  
 
 - 연속확률분포에서 특정사건이 발생할 확률은 항상 0 이다.  
 - 이때문에 특정사건에 대한 확률을 알고자 가능도의 개념이 나온다.
