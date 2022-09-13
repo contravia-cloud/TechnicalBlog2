@@ -30,6 +30,8 @@ permalink: /docs/AD1/
 <br/>  
 [tutorial - PCL](https://pcl.gitbook.io/tutorial/)  
 
+[로콜라이제이션 위주의 설명 및 샘플 코드](https://calvinfeng.gitbook.io/probabilistic-robotics/)
+
 
 #### 1.2. 기술의 구성  
 - 배경 기술  
