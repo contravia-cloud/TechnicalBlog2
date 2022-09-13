@@ -217,6 +217,41 @@ of health facility in Palembang](https://iopscience.iop.org/article/10.1088/1742
 ![image](https://user-images.githubusercontent.com/57220434/188644019-db8b48fb-a3b3-4f2f-9986-7b360ed8f5ef.png)
 
 
+### 9. Monte Carlo method  
+> https://throwexception.tistory.com/314  
+> 
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from numpy.random import uniform 
+
+N = 20000  # number of points
+radius = 1.
+area = (2*radius)**2
+
+pts = uniform(-1, 1, (N, 2))
+
+# distance from (0,0) 
+dist = np.linalg.norm(pts, axis=1)
+in_circle = dist <= 1
+
+pts_in_circle = np.count_nonzero(in_circle)
+pi = 4 * (pts_in_circle / N)
+
+# plot results
+plt.scatter(pts[in_circle,0], pts[in_circle,1], 
+            marker=',', edgecolor='k', s=1)
+plt.scatter(pts[~in_circle,0], pts[~in_circle,1], 
+            marker=',', edgecolor='r', s=1)
+plt.axis('equal')
+
+print('mean pi(N={})= {:.4f}'.format(N, pi))
+
+# 출처: https://throwexception.tistory.com/314 [집밖은 위험해:티스토리]
+```
 
 
+### 10.Particle Filter  
+- 칼만 필터 (Kalman Filter)
 
